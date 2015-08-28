@@ -4,7 +4,7 @@ Run with `ruby google_oauth_access_token.rb` and then go to http://localhost:456
 
 You can save the output to the environment variable, e.g. CLIENT_SECRETS and use it like this:
 ```
-client = Google::APIClient.new(application_name: 'SlidesLive', application_version: '1.0')
+client = Google::APIClient.new(application_name: 'Sample Application', application_version: '1.0')
 
 credentials = Google::APIClient::ClientSecrets.new(MultiJson.load(ENV['CLIENT_SECRETS']))
 authorization = credentials.to_authorization
